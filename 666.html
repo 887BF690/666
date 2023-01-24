@@ -1,0 +1,474 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>佐佐帝王佐佐帝王佐佐帝王佐佐帝王佐佐帝王佐佐帝王</title>
+		<link href="https://cdn.jsdelivr.net/npm/daisyui@2.47.0/dist/full.css" rel="stylesheet" type="text/css" />
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+	<body>
+		<div class="flex justify-center text-center  pt-1 ">
+			<div class="flex flex-col p-2  bg-gray-100 rounded-2xl shadow-xl leading-4 ">
+				<div class="flex flex-row items-stretch justify-between">
+				<div class="w-1/3" class="font-bold text-xl text-green-900" onclick="duibi(1)">佐佐帝王佐佐帝王</div>
+				<div class="w-1/3" class="font-bold text-xl text-green-900" onclick="duibi(2)">佐佐帝王佐佐帝王</div>
+				<div class="w-1/3" class="font-bold text-xl text-green-900" onclick="duibi(3)">佐佐帝王佐佐帝王</div>
+				</div>
+				<div class="header">
+					<table class=" w-full text-center leading-6 text-gray-800 ">
+						<!-- head -->
+						<tbody>
+							<!-- row 1 -->
+							<tr>
+								<td> <label class="swap pt-1 "> <input type="checkbox" onchange="shaixuan()" name="arr1"
+											value="04,16,28,40">
+										<div class="swap-on bg-lime-600 text-gray-50 rounded-md">(鼠)</div>
+										<div class="swap-off">鼠</div>
+									</label> </td>
+								<td> <label class="swap pt-1 "> <input type="checkbox" onchange="shaixuan()" name="arr2"
+											value="03,15,27,39">
+										<div class="swap-on bg-lime-600 text-gray-50 rounded-md">(牛)</div>
+										<div class="swap-off">牛</div>
+									</label> </td>
+								<td> <label class="swap pt-1 "> <input type="checkbox" onchange="shaixuan()" name="arr3"
+											value="02,14,26,38">
+										<div class="swap-on bg-lime-600 text-gray-50 rounded-md">(虎)</div>
+										<div class="swap-off">虎</div>
+									</label> </td>
+								<td> <label class="swap pt-1 "> <input type="checkbox" onchange="shaixuan()" name="arr4"
+											value="01,13,25,37,49">
+										<div class="swap-on bg-lime-600 text-gray-50 rounded-md">(兔)</div>
+										<div class="swap-off">兔</div>
+									</label> </td>
+								<td> <label class="swap pt-1 "> <input type="checkbox" onchange="shaixuan()" name="arr5"
+											value="12,24,36,48">
+										<div class="swap-on bg-lime-600 text-gray-50 rounded-md">(龙)</div>
+										<div class="swap-off">龙</div>
+									</label> </td>
+								<td> <label class="swap pt-1 "> <input type="checkbox" onchange="shaixuan()" name="arr6"
+											value="11,23,35,47">
+										<div class="swap-on bg-lime-600 text-gray-50 rounded-md">(蛇)</div>
+										<div class="swap-off">蛇</div>
+									</label> </td>
+								<td> <label class="swap pt-1 "> <input type="checkbox" onchange="shaixuan()" name="arr7"
+											value="10,22,34,46">
+										<div class="swap-on bg-lime-600 text-gray-50 rounded-md">(马)</div>
+										<div class="swap-off">马</div>
+									</label> </td>
+								<td> <label class="swap pt-1 "> <input type="checkbox" onchange="shaixuan()" name="arr8"
+											value="09,21,33,45">
+										<div class="swap-on bg-lime-600 text-gray-50 rounded-md">(羊)</div>
+										<div class="swap-off">羊</div>
+									</label> </td>
+								<td> <label class="swap pt-1 "> <input type="checkbox" onchange="shaixuan()" name="arr9"
+											value="08,20,32,44">
+										<div class="swap-on bg-lime-600 text-gray-50 rounded-md">(猴)</div>
+										<div class="swap-off">猴</div>
+									</label> </td>
+								<td> <label class="swap pt-1 "> <input type="checkbox" onchange="shaixuan()"
+											name="arr10" value="07,19,31,43">
+										<div class="swap-on bg-lime-600 text-gray-50 rounded-md">(鸡)</div>
+										<div class="swap-off">鸡</div>
+									</label> </td>
+								<td> <label class="swap pt-1 "> <input type="checkbox" onchange="shaixuan()"
+											name="arr11" value="06,18,30,42">
+										<div class="swap-on bg-lime-600 text-gray-50 rounded-md">(狗)</div>
+										<div class="swap-off">狗</div>
+									</label> </td>
+								<td> <label class="swap pt-1 "> <input type="checkbox" onchange="shaixuan()"
+											name="arr12" value="05,17,29,41">
+										<div class="swap-on bg-lime-600 text-gray-50 rounded-md">(猪)</div>
+										<div class="swap-off">猪</div>
+									</label> </td>
+							</tr>
+							<!-- row 2 -->
+							<script type="text/javascript">
+								document.write("<tr>");
+								for (var i = 4; i >= 1; i--) {
+									document.write("<td id='0" + i + "'>0" + i + "</td>");
+								}
+								for (var i = 2; i >= 0; i--) {
+									document.write("<td id='1" + i + "'>1" + i + "</td>");
+								}
+								for (var i = 9; i >= 5; i--) {
+									document.write("<td id='0" + i + "'>0" + i + "</td>");
+								}
+								document.write("</tr><tr>");
+								for (var i = 16; i >= 13; i--) {
+									document.write("<td id='" + i + "'>" + i + "</td>");
+								}
+								for (var i = 24; i >= 17; i--) {
+									document.write("<td id='" + i + "'>" + i + "</td>");
+								}
+								document.write("</tr><tr>");
+								for (var i = 28; i >= 25; i--) {
+									document.write("<td id='" + i + "'>" + i + "</td>");
+								}
+								for (var i = 36; i >= 29; i--) {
+									document.write("<td id='" + i + "'>" + i + "</td>");
+								}
+								document.write("</tr><tr>");
+								for (var i = 40; i >= 37; i--) {
+									document.write("<td id='" + i + "'>" + i + "</td>");
+								}
+								for (var i = 48; i >= 41; i--) {
+									document.write("<td id='" + i + "'>" + i + "</td>");
+								}
+								document.write("</tr>");
+								for (var i = 52; i >= 42; i--) {
+									if (i == 49) {
+										document.write("<td id='" + i + "'>" + i + "</td>");
+									} else {
+										document.write("<td></td>");
+									}
+								}
+								document.write("</tr>");
+							</script>
+							<tr>
+						 	<td><label class="swap pt-1 "> <input type="checkbox" onchange="shaixuan()" name="arr13"
+											value="01,03,05,07,09,11,13,15,17,19,21,23,25,27,29,31,33,35,37,39,41,43,45,47,49">
+										<div class="swap-on bg-lime-600 text-gray-50 rounded-md">(单)</div>
+										<div class="swap-off">单</div>
+									</label> </td>
+								<td><label class="swap pt-1 "> <input type="checkbox" onchange="shaixuan()" name="arr14"
+											value="02,04,06,08,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48">
+										<div class="swap-on bg-lime-600 text-gray-50 rounded-md">(双)</div>
+										<div class="swap-off">双</div>
+									</label> </td>
+								<td><label class="swap pt-1 "> <input type="checkbox" onchange="shaixuan()" name="arr15"
+											value="25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49">
+										<div class="swap-on bg-lime-600 text-gray-50 rounded-md">(大)</div>
+										<div class="swap-off">大</div>
+									</label> </td>
+								<td><label class="swap pt-1 "> <input type="checkbox" onchange="shaixuan()" name="arr16"
+											value="01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24">
+										<div class="swap-on bg-lime-600 text-gray-50 rounded-md">(小)</div>
+										<div class="swap-off">小</div>
+									</label> </td>
+								<td></td>
+								<td></td>
+								<td><label class="swap pt-1 "> <input type="checkbox" onchange="shaixuan()" name="arr37"
+											value="01,02,09,10,23,24,31,32,39,40">
+										<div class="swap-on bg-lime-600 text-gray-50 rounded-md">(金)</div>
+										<div class="swap-off">金</div>
+									</label> </td>
+								<td><label class="swap pt-1 "> <input type="checkbox" onchange="shaixuan()" name="arr38"
+											value="05,06,13,14,21,22,35,36,43,44">
+										<div class="swap-on bg-lime-600 text-gray-50 rounded-md">(木)</div>
+										<div class="swap-off">木</div>
+									</label> </td>
+								<td><label class="swap pt-1 "> <input type="checkbox" onchange="shaixuan()" name="arr39"
+											value="11,12,19,20,27,28,41,42,49">
+										<div class="swap-on bg-lime-600 text-gray-50 rounded-md">(水)</div>
+										<div class="swap-off">水</div>
+									</label> </td>
+								<td><label class="swap pt-1 "> <input type="checkbox" onchange="shaixuan()" name="arr40"
+											value="07,08,15,16,29,30,37,38,45,46">
+										<div class="swap-on bg-lime-600 text-gray-50 rounded-md">(火)</div>
+										<div class="swap-off">火</div>
+									</label> </td>
+								<td><label class="swap pt-1 "> <input type="checkbox" onchange="shaixuan()" name="arr41"
+											value="03,04,17,18,25,26,33,34,47,48">
+										<div class="swap-on bg-lime-600 text-gray-50 rounded-md">(土)</div>
+										<div class="swap-off">土</div>
+									</label> </td>
+								<td><label class="swap pt-1 "> <input type="checkbox" onchange="chonglai()"
+											name="arr00">
+										<div class="swap-on bg-lime-600 text-gray-50 rounded-md">(O)FF</div>
+										<div class="swap-off">off</div>
+									</label> </td>
+
+							</tr>
+							<!-- row 2 -->
+							<tr>
+								<td><label class="swap pt-1 "> <input type="checkbox" onchange="shaixuan()" name="arr42"
+											value="25,27,29,31,33,35,37,39,41,43,45,47,49">
+										<div class="swap-on bg-lime-600 text-gray-50 rounded-md">(大)单</div>
+										<div class="swap-off">大单</div>
+									</label> </td>
+								<td><label class="swap pt-1 "> <input type="checkbox" onchange="shaixuan()" name="arr44"
+											value="01,03,05,07,09,11,13,15,17,19,21,23">
+										<div class="swap-on bg-lime-600 text-gray-50 rounded-md">(小)单</div>
+										<div class="swap-off">小单</div>
+									</label> </td>
+								<td><label class="swap pt-1 "> <input type="checkbox" onchange="shaixuan()" name="arr43"
+											value="26,28,30,32,34,36,38,40,42,44,46,48">
+										<div class="swap-on bg-lime-600 text-gray-50 rounded-md">(大)双</div>
+										<div class="swap-off">大双</div>
+									</label> </td>
+								<td><label class="swap pt-1 "> <input type="checkbox" onchange="shaixuan()" name="arr45"
+											value="02,04,06,08,10,12,14,16,18,20,22,24">
+										<div class="swap-on bg-lime-600 text-gray-50 rounded-md">(小)双</div>
+										<div class="swap-off">小双</div>
+									</label> </td>
+								<td> </td>
+								<td> </td>
+								<td><label class="swap pt-1 "> <input type="checkbox" onchange="shaixuan()" name="arr46"
+											value="01,07,13,19,23,29,35,45">
+										<div class="swap-on bg-lime-600 text-gray-50 rounded-md">(红)单</div>
+										<div class="swap-off">红单</div>
+									</label> </td>
+								<td><label class="swap pt-1 "> <input type="checkbox" onchange="shaixuan()" name="arr47"
+											value="03,09,15,25,31,37,41,47">
+										<div class="swap-on bg-lime-600 text-gray-50 rounded-md">(蓝)单</div>
+										<div class="swap-off">蓝单</div>
+									</label> </td>
+								<td><label class="swap pt-1 "> <input type="checkbox" onchange="shaixuan()" name="arr48"
+											value="05,11,17,21,27,33,39,43,49">
+										<div class="swap-on bg-lime-600 text-gray-50 rounded-md">(绿)单</div>
+										<div class="swap-off">绿单</div>
+									</label> </td>
+								<td><label class="swap pt-1 "> <input type="checkbox" onchange="shaixuan()" name="arr49"
+											value="02,08,12,18,24,30,34,40,46">
+										<div class="swap-on bg-lime-600 text-gray-50 rounded-md">(红)双</div>
+										<div class="swap-off">红双</div>
+									</label> </td>
+								<td><label class="swap pt-1 "> <input type="checkbox" onchange="shaixuan()" name="arr50"
+											value="04,10,14,20,26,36,42,48">
+										<div class="swap-on bg-lime-600 text-gray-50 rounded-md">(蓝)双</div>
+										<div class="swap-off">蓝双</div>
+									</label> </td>
+								<td><label class="swap pt-1 "> <input type="checkbox" onchange="shaixuan()" name="arr51"
+											value="06,16,22,28,32,38,44">
+										<div class="swap-on bg-lime-600 text-gray-50 rounded-md">(绿)双</div>
+										<div class="swap-off">绿双</div>
+									</label> </td>
+							</tr>
+							<tr>
+								<td><label class="swap pt-1 "> <input type="checkbox" onchange="shaixuan()" name="arr22"
+											value="10,20,30,40">
+										<div class="swap-on bg-lime-600 text-gray-50 rounded-md">(0)尾</div>
+										<div class="swap-off">0尾</div>
+									</label> </td>
+								<td><label class="swap pt-1 "> <input type="checkbox" onchange="shaixuan()" name="arr23"
+											value="01,11,21,31,41">
+										<div class="swap-on bg-lime-600 text-gray-50 rounded-md">(1)尾</div>
+										<div class="swap-off">1尾</div>
+									</label> </td>
+								<td><label class="swap pt-1 "> <input type="checkbox" onchange="shaixuan()" name="arr24"
+											value="02,12,22,32,42">
+										<div class="swap-on bg-lime-600 text-gray-50 rounded-md">(2)尾</div>
+										<div class="swap-off">2尾</div>
+									</label> </td>
+								<td><label class="swap pt-1 "> <input type="checkbox" onchange="shaixuan()" name="arr25"
+											value="03,13,23,33,43">
+										<div class="swap-on bg-lime-600 text-gray-50 rounded-md">(3)尾</div>
+										<div class="swap-off">3尾</div>
+									</label> </td>
+								<td><label class="swap pt-1 "> <input type="checkbox" onchange="shaixuan()" name="arr26"
+											value="04,14,24,34,44">
+										<div class="swap-on bg-lime-600 text-gray-50 rounded-md">(4)尾</div>
+										<div class="swap-off">4尾</div>
+									</label> </td>
+								<td><label class="swap pt-1 "> <input type="checkbox" onchange="shaixuan()" name="arr27"
+											value="05,15,25,35,45">
+										<div class="swap-on bg-lime-600 text-gray-50 rounded-md">(5)尾</div>
+										<div class="swap-off">5尾</div>
+									</label> </td>
+								<td><label class="swap pt-1 "> <input type="checkbox" onchange="shaixuan()" name="arr28"
+											value="06,16,26,36,46">
+										<div class="swap-on bg-lime-600 text-gray-50 rounded-md">(6)尾</div>
+										<div class="swap-off">6尾</div>
+									</label> </td>
+								<td><label class="swap pt-1 "> <input type="checkbox" onchange="shaixuan()" name="arr29"
+											value="07,17,27,37,47">
+										<div class="swap-on bg-lime-600 text-gray-50 rounded-md">(7)尾</div>
+										<div class="swap-off">7尾</div>
+									</label> </td>
+								<td><label class="swap pt-1 "> <input type="checkbox" onchange="shaixuan()" name="arr30"
+											value="08,18,28,38,48">
+										<div class="swap-on bg-lime-600 text-gray-50 rounded-md">(8)尾</div>
+										<div class="swap-off">8尾</div>
+									</label> </td>
+								<td><label class="swap pt-1 "> <input type="checkbox" onchange="shaixuan()" name="arr31"
+											value="09,19,29,39,49">
+										<div class="swap-on bg-lime-600 text-gray-50 rounded-md">(9)尾</div>
+										<div class="swap-off">9尾</div>
+									</label> </td>
+								<td></td>
+								<td><label class="swap pt-1 "> <input type="checkbox" onchange="shaixuan()" name="arr20"
+											value="03,05,06,07,09,10,15,17,18,19,21,22,27,29,30,31,33,34,39,41,42,43,45,46">
+										<div class="swap-on bg-lime-600 text-gray-50 rounded-md">(家)</div>
+										<div class="swap-off">家</div>
+									</label> </td>
+							</tr>
+							<tr>
+								<td><label class="swap pt-1 "> <input type="checkbox" onchange="shaixuan()" name="arr32"
+											value="01,02,03,04,05,06,07,08,09">
+										<div class="swap-on bg-lime-600 text-gray-50 rounded-md">(0)头</div>
+										<div class="swap-off">0头</div>
+									</label> </td>
+								<td><label class="swap pt-1 "> <input type="checkbox" onchange="shaixuan()" name="arr33"
+											value="10,11,12,13,14,15,16,17,18,19">
+										<div class="swap-on bg-lime-600 text-gray-50 rounded-md">(1)头</div>
+										<div class="swap-off">1头</div>
+									</label> </td>
+								<td><label class="swap pt-1 "> <input type="checkbox" onchange="shaixuan()" name="arr34"
+											value="20,21,22,23,24,25,26,27,28,29">
+										<div class="swap-on bg-lime-600 text-gray-50 rounded-md">(2)头</div>
+										<div class="swap-off">2头</div>
+									</label> </td>
+								<td><label class="swap pt-1 "> <input type="checkbox" onchange="shaixuan()" name="arr35"
+											value="30,31,32,33,34,35,36,37,38,39">
+										<div class="swap-on bg-lime-600 text-gray-50 rounded-md">(3)头</div>
+										<div class="swap-off">3头</div>
+									</label> </td>
+								<td><label class="swap pt-1 "> <input type="checkbox" onchange="shaixuan()" name="arr36"
+											value="40,41,42,43,44,45,46,47,48,49">
+										<div class="swap-on bg-lime-600 text-gray-50 rounded-md">(4)头</div>
+										<div class="swap-off">4头</div>
+									</label> </td>
+								<td></td>
+								<td><label class="swap pt-1 "> <input type="checkbox" onchange="shaixuan()" name="arr17"
+											value="01,02,07,08,12,13,18,19,23,24,29,30,34,35,40,45,46">
+										<div class="swap-on bg-lime-600 text-gray-50 rounded-md">(红)</div>
+										<div class="swap-off">红</div>
+									</label> </td>
+								<td><label class="swap pt-1 "> <input type="checkbox" onchange="shaixuan()" name="arr18"
+											value="03,04,09,10,14,15,20,25,26,31,36,37,41,42,47,48">
+										<div class="swap-on bg-lime-600 text-gray-50 rounded-md">(蓝)</div>
+										<div class="swap-off">蓝</div>
+									</label> </td>
+								<td><label class="swap pt-1 "> <input type="checkbox" onchange="shaixuan()" name="arr19"
+											value="05,06,11,16,17,21,22,27,28,32,33,38,39,43,44,49">
+										<div class="swap-on bg-lime-600 text-gray-50 rounded-md">(绿)</div>
+										<div class="swap-off">绿</div>
+									</label> </td>
+								<td></td>
+								<td></td>
+								<td><label class="swap pt-1 "> <input type="checkbox" onchange="shaixuan()" name="arr21"
+											value="01,02,04,08,11,12,13,14,16,20,23,24,25,26,28,32,35,36,37,38,40,44,47,48,49">
+										<div class="swap-on bg-lime-600 text-gray-50 rounded-md">(野)</div>
+										<div class="swap-off">野</div>
+									</label> </td>
+							</tr>
+							<tr>
+								<!-- <td><span onclick="chonglai()">▲🔺 </span></td> -->
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<textarea class="textarea bg-gray-100 w-full mt-1 text-xl" placeholder="zcx" id="xxk"></textarea>
+				<div class="flex flex-row items-stretch justify-between">
+				  <div class="w-1/3">
+				  <span class="text-pink-500" id="xxkk01"></span></div>
+				  <div class="w-1/3">
+				  <span class="text-pink-500" id="xxkk02"></span></div>
+				  <div class="w-1/3">
+				  <span class="text-pink-500" id="xxkk03"></span></div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</body>
+
+	<script type="text/javascript">
+		function duibi(ss){
+			var reg=/[鼠牛虎兔龙蛇马羊猴鸡狗猪]/;
+			let zr1=''
+			if(reg.test(document.getElementById('xxk').value)) {
+			zr1 = document.getElementById('xxk').value.replace(/\.|\ |\n/g, ",").split('');
+			} else {
+			zr1 = document.getElementById('xxk').value.replace(/\.|\ |\n/g, ",").split(',');
+			}
+			zrr = [];
+			zr1.forEach(function(item,index){
+			    if(zr1.indexOf(item) !== index && zrr.indexOf(item) === -1){
+			        zrr.push(item);
+			    }
+			});
+			switch (ss){
+				case 1:document.getElementById('xxkk01').innerHTML=zrr+' '
+					break;
+				case 2:document.getElementById('xxkk02').innerHTML=zrr+' '
+					break;
+				case 3:document.getElementById('xxkk03').innerHTML=zrr+' '
+					break;
+				default:
+					break;
+			}
+			
+		}
+		function chonglai() {
+			if (document.getElementsByName('arr00')[0].checked) {
+				for (var i = 1; i < 52; i++) {if (document.getElementsByName('arr' + i)[0]) {document.getElementsByName('arr' + i)[0].checked = false}}
+			} else {
+				for (var i = 1; i < 52; i++) {if (document.getElementsByName('arr' + i)[0]) {document.getElementsByName('arr' + i)[0].checked = true}}
+			}
+			shaixuan()
+		}
+
+		function shaixuan() {
+			let brrr = Array.from({length: 49}, (v, i) => (i + 1).toString().padStart(2, '0'));
+			//上面的代码会创建一个长度为50的数组，每个元素都是一个字符串，该字符串表示从1到50的数字，并且该字符串的长度为2，不足的部分用0补充。
+			// var arr1 = document.getElementsByName('arr1')[0].checked;
+			for (let i = 1; i < 52; i++) {
+				let varName = "arr" + i;
+				window[varName] = document.getElementsByName('arr' + i)[0].checked;;
+			}
+			// var b1 = document.getElementsByName('arr1')[0].value.split(',');
+			for (let i = 1; i < 52; i++) {
+				let varName = "b" + i;
+				window[varName] = document.getElementsByName('arr' + i)[0].value.split(',');
+			}
+			var filters = [],shier = [],danshuang = [],daxiao = [],bose = [],bosedaxiao = [],jiaye = [],weishu = [],toushu = [],wuxing = [],danshuangdaxiao = [];
+
+			let crr = [0];
+			for (let i = 1; i < 52; i++) {crr.push(eval(`arr${i}`));}
+			let csrr = [0];
+			for (let i = 1; i < 52; i++) {csrr.push(eval(`b${i}`));}
+
+			for (let i = 1; i < crr.length + 1; i++) {
+				if (crr[i]) {
+					shier += (i < 13) ? (',' + csrr[i]) : '';
+					danshuang += (i >= 13 && i < 15) ? (',' + csrr[i]) : '';
+					daxiao += (i >= 15 && i < 17) ? (',' + csrr[i]) : '';
+					bose += (i >= 17 && i < 20) ? (',' + csrr[i]) : '';
+					jiaye += (i >= 20 && i < 22) ? (',' + csrr[i]) : '';
+					weishu += (i >= 22 && i < 32) ? (',' + csrr[i]) : '';
+					toushu += (i >= 32 && i < 37) ? (',' + csrr[i]) : '';
+					wuxing += (i >= 37 && i < 42) ? (',' + csrr[i]) : '';
+					danshuangdaxiao += (i >= 42 && i < 46) ? (',' + csrr[i]) : '';
+					bosedaxiao += (i >= 46 && i < 52) ? (',' + csrr[i]) : '';
+				}
+			}
+
+			[shier, danshuang, daxiao, bose, jiaye, weishu, toushu, wuxing, danshuangdaxiao, bosedaxiao].forEach(item => {if (item.length > 0) {filters.push(item)}})
+
+			// let result = brrr.filter(element => {return filters.every(abc => abc.includes(element));});
+			let result = [];
+			let rejected = [];
+			brrr.forEach(element => {
+				let isIncluded = filters.every(abc => abc.includes(element));
+			 if (isIncluded) {
+					result.push(element);
+				} else {
+					rejected.push(element);
+				}
+			});
+
+			console.log(result.length);
+			if (49 > result.length > 0) {
+				document.getElementById('xxk').value = (result + '=(' + result.length + ')')
+				for (var i = 0; i < result.length; i++) {
+					if (b17.includes(result[i])) {
+						document.getElementById(result[i]).innerHTML =
+							"<div class='w-full text-center bg-red-500 rounded-full'><span>" + result[i] + "</span></div>"
+					} else if (b18.includes(result[i])) {
+						document.getElementById(result[i]).innerHTML =
+							"<div class='w-full text-center bg-blue-500 rounded-full'><span>" + result[i] + "</span></div>"
+					} else if (b19.includes(result[i])) {
+						document.getElementById(result[i]).innerHTML =
+							"<div class='w-full text-center bg-green-500 rounded-full'><span>" + result[i] + "</span></div>"
+					}
+				}
+				for (var i = 0; i < rejected.length; i++) {document.getElementById(rejected[i]).innerHTML = rejected[i]}
+			} else {
+				document.getElementById('xxk').value = ('zcx')
+				for (var i = 0; i < result.length; i++) {document.getElementById(result[i]).innerHTML = result[i]}
+			}
+		}
+	</script>
+</html>
